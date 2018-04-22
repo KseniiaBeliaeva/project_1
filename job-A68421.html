@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href='style.css'>
+    <title>JOB A68421</title>
+    <!--Font awesome (top-bottom arrows)-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+    <!--Font-family for the whole page-->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <!--Left Block-->
+        <div class="block" id="block-left">
+            <div class="section-list add-padding">
+                <!--<img id="logo" src="logo.png">-->
+                Section List</div>
+            <a href="#">
+                <i class="fas fa-chevron-up  up-down-buttons"></i>
+            </a>
+            <div id="buttonContainer"></div>
+            <a href="#">
+                <i class="fas fa-chevron-down  up-down-buttons"></i>
+            </a>
+        </div>
+
+        <!--Right Block-->
+        <div class="block" id="block-right">
+            <div class="job-number">JOB: A68421 – COLOUR: Metallic Lustre (MTLP)</div>
+            <div class="picking-shedule add-padding">Picking Shedule</div>
+
+            <!-- Table -->
+            <table>
+                <tr class="description">
+                    <th>Section</th>
+                    <th>Location</th>
+                    <th>Length(mm)</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr class="row">
+                    <td>
+                        <a href="#">SD06-MTLP</a>
+                    </td>
+                    <td>Offcut Bay</td>
+                    <td>3400</td>
+                    <td>3</td>
+                </tr>
+                <tr class="row">
+                    <td>
+                        <a href="#">SD06-MTLP</a>
+                    </td>
+                    <td>H-L-1.2</td>
+                    <td>5878</td>
+                    <td>2</td>
+                </tr>
+                <tr class="row">
+                    <td>SD06-MTLP</td>
+                    <td>H-L-1.5</td>
+                    <td>5368</td>
+                    <td>6</td>
+                </tr>
+                <tr class="row">
+                    <td>SD06-MTLP</td>
+                    <td>Offcut Bay</td>
+                    <td>3400</td>
+                    <td>3</td>
+                </tr>
+                <tr class="row">
+                    <td>SD06-MTLP</td>
+                    <td>Offcut Bay</td>
+                    <td>3400</td>
+                    <td>3</td>
+                </tr>
+                <tr class="row">
+                    <td>SD06-MTLP</td>
+                    <td>H-L-1.2</td>
+                    <td>5878</td>
+                    <td>2</td>
+                </tr>
+                <tr class="row">
+                    <td>SD06-MTLP</td>
+                    <td>H-L-1.2</td>
+                    <td>5878</td>
+                    <td>2</td>
+                </tr>
+            </table>
+            <!--/Table-->
+        </div>
+        <!--/Right Block-->
+    </div>
+
+
+    <script type="text/javascript">
+        // Get the container element
+        var btnContainer = document.getElementById("block-left");
+        // Get all buttons with class="btn" inside the container
+        var btns = btnContainer.getElementsByClassName("section-list_buttons");
+
+        $(btns).click(function () {
+            $(btns).removeClass('section-list_active');
+            $(this).addClass('section-list_active');
+        });
+
+
+    </script>
+    <script type="text/javascript">
+        function redirect() {
+            document.location = 'index.html';
+        }
+    </script>
+    <script>
+
+    </script>
+
+    <!--
+     1. show only limited number of buttons
+     2. on scroll or button clicking show other buttons
+
+     1. left block height = right block height
+
+     1. fixed top ? (job-number section)
+
+     1. go to the other html page on button click
+
+     1.
+    -->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
