@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href='style.css'>
+    <link rel="stylesheet" type="text/css" href='job-style.css'>
     <title>JOB A68421</title>
     <!--Font awesome (top-bottom arrows)-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
@@ -35,64 +36,18 @@
 
         <!--Right Block-->
         <div class="block" id="block-right">
+            <!--Modal box-->
+            <div class="modal-box" id="modal">
+                <div class="modal-content">
+                    Some text
+                    <span id="close-btn">&times;</span>
+                    </div>
+            </div>
             <div class="job-number">JOB: A68421 – COLOUR: Metallic Lustre (MTLP)</div>
-            <div class="picking-shedule add-padding">Picking Shedule</div>
-
+            <div class="picking-shedule add-padding">Picking Schedule</div>
+           
             <!-- Table -->
-            <table>
-                <tr class="description">
-                    <th>Section</th>
-                    <th>Location</th>
-                    <th>Length(mm)</th>
-                    <th>Quantity</th>
-                </tr>
-                <tr class="row">
-                    <td>
-                        <a href="#">SD06-MTLP</a>
-                    </td>
-                    <td>Offcut Bay</td>
-                    <td>3400</td>
-                    <td>3</td>
-                </tr>
-                <tr class="row">
-                    <td>
-                        <a href="#">SD06-MTLP</a>
-                    </td>
-                    <td>H-L-1.2</td>
-                    <td>5878</td>
-                    <td>2</td>
-                </tr>
-                <tr class="row">
-                    <td>SD06-MTLP</td>
-                    <td>H-L-1.5</td>
-                    <td>5368</td>
-                    <td>6</td>
-                </tr>
-                <tr class="row">
-                    <td>SD06-MTLP</td>
-                    <td>Offcut Bay</td>
-                    <td>3400</td>
-                    <td>3</td>
-                </tr>
-                <tr class="row">
-                    <td>SD06-MTLP</td>
-                    <td>Offcut Bay</td>
-                    <td>3400</td>
-                    <td>3</td>
-                </tr>
-                <tr class="row">
-                    <td>SD06-MTLP</td>
-                    <td>H-L-1.2</td>
-                    <td>5878</td>
-                    <td>2</td>
-                </tr>
-                <tr class="row">
-                    <td>SD06-MTLP</td>
-                    <td>H-L-1.2</td>
-                    <td>5878</td>
-                    <td>2</td>
-                </tr>
-            </table>
+            <div id="job-table"></div>
             <!--/Table-->
         </div>
         <!--/Right Block-->
@@ -134,7 +89,8 @@
      1.
     -->
 
-    <script src="index.js"></script>
+    <script src="sections.js"></script>
+    <script src="picking-schedule.js"></script>
 </body>
 
 </html>

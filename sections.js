@@ -25,7 +25,7 @@ var sectionBar = sectionList.map(function (navigationObject) {
 }).join("");
 document.getElementById('buttonContainer').innerHTML = sectionBar;
 
-//Pickin
+
 
 
 // // Modal Box
